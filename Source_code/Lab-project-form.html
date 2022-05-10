@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Booking Form</title>
+    <link rel="stylesheet" href="Project-form.css">
+</head>
+
+<body>
+    <section>
+        <form action="#">
+            <div class="form-container">
+                <div class="form">
+                    <div>
+                        <h2>1. Your Contact Details</h2>
+                        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required="true">
+                        <input type="text" name="patientid" id="patientid" placeholder="Patient Id if exists" required>
+                        <input type="number" min="6000000000" max="9999999999" name="contactnumber" id="contactnumber"
+                            placeholder="Contact Number" required>
+                        <input type="email" name="email" id="email" placeholder="Email Id" required>
+                        <h2>2. Address</h2>
+                        <input type="text" name="housenumber" id="housenumber" placeholder="H-No" required="true">
+                        <input type="text" name="street" id="street" placeholder="Street" required="true">
+                        <input type="text" name="area" id="area" placeholder="Area" required="true">
+                        <label class="dropdown">District</label>
+                        <select name="District" id="district" required>
+                            <option value="">Choose</option>
+                            <option value="Udaipur">Udaipur</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Delhi">Delhi</option>
+                        </select>
+                        <article>
+                            <h2>3. Choose the Test Type</h2>
+                            <p>**Please check one box without fail**</p>
+                            <input type="checkbox" id="c1" name="option1" value="CBC">
+                            <label for="c1">CBC</label>
+                            <br>
+                            <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                            <label for="c2">Complete Urine</label>
+                            <br>
+                            <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                            <label for="c3">Lipid Profile</label>
+                            <br>
+                            <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                            <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                            <br>
+                            <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                            <label for="c5">Glucose Test</label>
+                        </article>
+                        <h2>4. Do you want a hard copy of the report also?</h2>
+                        <input type="radio" id="r1" name="choice" value="True" required>
+                        <span>Yes</span>
+                        <br>
+                        <input type="radio" id="r2" name="choice" value="False">
+                        <span>No</span><br>
+                        <h2>4. Select Your Comfortable Date and Time</h2>
+                        <input type="date" class="date_time" required>
+                        <input type="time" class="date_time">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
