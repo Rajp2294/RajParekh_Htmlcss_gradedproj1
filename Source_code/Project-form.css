@@ -1,0 +1,117 @@
+section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form-container {
+    position: relative;
+    left: 15%;
+    width: 75%;
+    height: 510px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    background: url("Images/Images/Lab-Test/lab-test.jpg") right no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form {
+    background-color: white;
+    width: 50%;
+    padding: 25px 25px;
+    margin-right: -4px;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid silver;
+    font-size: large;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    background-color: white;
+    padding: 3px;
+}
+
+input:focus {
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[name^="option"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
+
+input[name^="choice"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+#district {
+    width: 125px;
+    margin-top: 20px;
+    line-height: 5px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+input,
+h3 {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#district {
+    height: 50px;
+}
+
+.dropdown {
+    font-weight: 700;
+    display: block;
+    font-size: large;
+}
+
+
+/*Button*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    float: right;
+    border: none;
+    background-color: rgb(175, 102, 243);
+}
+
+.date_time {
+    display: inline-block;
+    max-width: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-height: fit-content;
+    text-align: left;
+}
+
+span {
+    padding: 4px;
+    vertical-align: middle;
+}
